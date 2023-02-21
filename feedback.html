@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="abc.css">
+  </head>
+  <body>
+    <div class="testbox" >
+      <form method="post" action="feedback.php">
+    <form>
+      <div class="banner">
+        <h1>FEEDBACK FORM</h1>
+      </div>
+      <br/>
+      <fieldset>
+        <legend>Personal information</legend>
+       
+
+        <div class="colums">
+          <div class="item">
+            <label for="fname">First Name<span>*</span></label>
+           <input id="fname" type="text" name="fname"/>
+          </div>
+          
+          <div class="item">
+            <label for="lname"> Last Name<span>*</span></label>
+            <input id="lname" type="text" name="lname" />
+          </div>
+          <div class="item">
+            <label for="address">Email Address<span>*</span></label>
+            <input id="address" type="text"   name="email" />
+          </div>
+          <div class="item">
+            <label for="Enrollment">Enrollment No</label>
+            <input id="Enrollment" type="text"   name="enrollment" />
+          </div>
+         
+      </fieldset>
+      <br/>
+      <fieldset>
+      <legend>Feedback Details</legend>
+      <div class="colums">
+      </div>
+
+      <label for="hear-about" >      
+       How was our teaching staff?     
+        </label>     
+        <select name="Q1" id="hear-about">      
+        <option value="excellent">excellent</option>      
+        <option value="good">good</option>      
+        <option value="average">average</option>      
+        <option value="bad">bad</option>
+        </select>
+        
+      <div class="checkbox">
+      
+      
+        <label for="teaching method" >    
+          Given a chance, what is one change that you would like to see?    
+      </label>     
+      <select name="Q2" id="teaching method">      
+      <option value="google">Teaching Method </option>      
+      <option value="friend">Time taken to complete a chapter</option>      
+      <option value="advert">Extracurricular actvities</option>      
+      <option value="other">Other</option>
+      </select>
+<br>
+      <label for="facilities" >    
+        Do you think that  school provides you with adequate sports facilities?
+    </label>     
+    <select name="Q3" id="facilities">      
+    <option value="Good">Good </option>      
+    <option value="Bad">Bad</option>      
+    
+    </select>
+
+      <p>     
+        <label for="comments">      
+        Please Provide us additional feedback for improve our college:     
+        </label>     
+        <br />     
+        <textarea rows="4" cols="90" id="comments " name="Q4">     
+        </textarea>   
+         </p>    
+      </fieldset>
+      <input type="submit" name="submit" value="Submit"/>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

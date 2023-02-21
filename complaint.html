@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COMPLAINT Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="complaint.css">
+  </head>
+  <body>
+    <div class="testbox" >
+      
+      <form method="post" action="complaint.php">
+    <form>
+      <div class="banner">
+        <h1>  COMPLAINT FORM</h1>
+      </div>
+      <br/>
+      <fieldset>
+        <legend>Personal information</legend>
+       
+
+        <div class="colums">
+          <div class="item">
+            <label for="fname">First Name<span>*</span></label>
+           <input id="fname" type="text" name="fname"/>
+          </div>
+          
+          <div class="item">
+            <label for="lname"> Last Name<span>*</span></label>
+            <input id="lname" type="text" name="lname" />
+          </div>
+          <div class="item">
+            <label for="address">Email Address<span>*</span></label>
+            <input id="email" type="text"   name="email" />
+          </div>
+          <div class="item">
+            <label for="Enrollment">Enrollment No</label>
+            <input id="enrollment" type="text"   name="enrollment" />
+          </div>
+         
+      </fieldset>
+      <br/>
+      <fieldset>
+      <legend>Complaint Details</legend>
+      <div class="colums">
+      </div>
+
+      <label>
+        Name of the person against which the complaint is filled -
+        <input type="text" name="person" required/>
+        </label>
+
+        <label>
+          Date on which the event is happen -   
+          <input name="date" type="date" name="date" required/>
+          </label>
+        
+      <div class="checkbox">
+      
+        <label>
+         The complaint regarding -
+          
+          <textarea rows="4" cols="90" id="regarding" name="regarding">     
+          </textarea>
+          <br>
+          
+          <label>
+            Place where incident took place
+            <input type="text" name="place" required/>
+            </label>
+      <p>     
+        <label for="briefly">      
+       The specific detail about complaint:     
+        </label>     
+        <br />     
+        <textarea rows="4" cols="90" name="briefly">     
+        </textarea>   
+         </p>    
+      </fieldset>
+      <input type="submit" name="submit" value="Submit"/>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
